@@ -11,7 +11,7 @@ data$Date <- as.Date(data$Date, format = "%d/%m/%Y")
 sdata <- data[with(data, Date == "2007-02-01" | Date == "2007-02-02"), ]
 
 # open png-file
-png(file="plot2.png", width = 480, height=480)
+png(file="plot2.png", width = 480, height=480, bg="transparent")
 
 # set locale to english
 cur_loc <- Sys.getlocale("LC_TIME")
